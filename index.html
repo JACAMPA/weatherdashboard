@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron jumbotron-fluid text-black p-3 mb-2">
+          <div class="container text-center">
+              <h1>Weather Dashboard</h1>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--search bar-->
+                    <div class="cardlist" style="width: 20rem;">
+                        <div class="card-header">
+                        Search by City
+                        <input id="cityInput">
+                        <button type="button" id="searchBtn"
+                        class="btn btn-primary"></i>Search</button
+                        
+                        id="searchedCity" class="list-group list-group-flush" style="list-style-type: none; padding-left: 10%;"></ul>
+                        </div> 
+                    </div>   
+                <!--searched city forecast display-->
+                    <main id="cityDisplay">
+                        <div class="col-md-12">
+                        <h1 id="city"></h1>
+                            <p>Temperature: <span id="temp"></span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Wind Speed: <span id="windSpeed"></span></p>
+                            <p>UV Index: <span id="UVindex"></span></p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <!--future 5 day forecast-->
+            <div class="container" id="futureForecast">
+                <h3>5-Day Forecast:</h3>
+                <section class="row" id="fiveday">
+            <!-- 1-->
+                    <div class="card text-white bg-primary mb 3">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day-1"></h4>
+                            <img id="pic-1"/>
+                        <br>
+                        <p class="card-text">Temperature: <span id="temperature-1"></span></p>
+                        <p>Humidity: <span id="humidity-1"></span></p>
+                        </div>
+                    </div>  
+            <!-- 2-->
+                    <div class="card text-white bg-primary mb 3">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day-2"></h4>
+                            <img id="pic-2"/>
+                        <br>
+                        <p class="card-text">Temperature: <span id="temperature-2"></span></p>
+                        <p>Humidity: <span id="humidity-2"></span></p>
+                        </div>
+                    </div>
+            <!-- 3-->
+                    <div class="card text-white bg-primary mb 3">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day-3"></h4>
+                            <img id="pic-3"/>
+                        <br>
+                        <p class="card-text">Temperature: <span id="temperature-3"></span</p>
+                        <p>Humidity: <span id="humidity-3"></span</p>
+                        </div>
+                    </div>
+            <!-- 4-->
+                    <div class="card text-white bg-primary mb 3">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day-4"></h4>
+                            <img id="pic-4"/>
+                        <br>
+                        <p class="card-text">Temperature: <span id="temperature-4"></span</p>
+                        <p>Humidity: <span id="humidity-4"></span</p>
+                        </div>
+                    </div>
+            <!-- 5-->
+                    <div class="card text-white bg-primary mb 3">
+                        <div class="card-body">
+                            <h4 class="card-title" id="day-5"></h4>
+                            <img id="pic-5"/>
+                        <br>
+                        <p class="card-text">Temperature: <span id="temperature-5"></span</p>
+                        <p>Humidity: <span id="humidity-5"></span</p>
+                        </div>
+                    </div> 
+                </section> 
+            </div>
+        </div>
+    
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="assets/script.js"></script> 
+</body>
+</html>
